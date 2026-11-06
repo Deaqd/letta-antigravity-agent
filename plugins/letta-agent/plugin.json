@@ -1,0 +1,10 @@
+{
+  "name": "letta-agent",
+  "version": "1.0.0",
+  "description": "Full-fledged Letta AI Agent with persistent hierarchical memory (core, archival, recall) for Google Antigravity",
+  "author": {
+    "name": "Antigravity Engineering Team"
+  },
+  "homepage": "https://github.com/letta-ai/letta",
+  "skills": ["skills/letta"]
+}

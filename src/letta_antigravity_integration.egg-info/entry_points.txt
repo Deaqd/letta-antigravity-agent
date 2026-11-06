@@ -1,0 +1,3 @@
+[console_scripts]
+letta-admin = letta_integration.cli:main
+letta-mcp = letta_integration.server.mcp_server:main

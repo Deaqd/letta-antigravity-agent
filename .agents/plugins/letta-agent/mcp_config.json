@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "letta-agent": {
+      "command": "python",
+      "args": [
+        "-m",
+        "letta_integration.server.mcp_server"
+      ],
+      "env": {
+        "PYTHONPATH": "src",
+        "LETTA_MODE": "auto",
+        "LETTA_STORAGE_PATH": "./data/letta_storage.db"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "letta-antigravity-integration"
+version = "1.0.0"
+description = "Full-fledged Letta AI Agent integration for Google Antigravity"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "letta-client>=1.12.0",
+    "mcp>=2.3.0",
+    "pydantic>=2.10.0",
+    "google-genai>=3.0.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+letta-mcp = "letta_integration.server.mcp_server:main"
+letta-admin = "letta_integration.cli:main"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
